@@ -25,7 +25,7 @@ const renderPagination = (index, total, context) => {
 const Ad = () => {
   return (
     <View style={styles.block}>
-      <Swiper renderPagination={renderPagination}>
+      <Swiper renderPagination={renderPagination} autoplay>
         {imageData.map(data => (
           <View style={styles.slide} key={data.index}>
             <Image style={styles.image} source={data.url} />

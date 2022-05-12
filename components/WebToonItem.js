@@ -13,7 +13,7 @@ const WebToonItem = ({title, author, url, likeNum}) => {
           <Icon name="star" color="red" size={17} />
           <Text style={styles.reactionNum}>{likeNum}</Text>
         </View>
-        <Text>{author}</Text>
+        <Text style={styles.author}>{author}</Text>
       </View>
     </View>
   );
@@ -41,7 +41,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontWeight: '900',
+    fontWeight: 'bold',
+    color: 'black',
   },
   reaction: {
     height: 20,
@@ -53,7 +54,9 @@ const styles = StyleSheet.create({
     marginLeft: 5,
     color: 'red',
   },
-  author: {},
+  author: {
+    color: 'black',
+  },
 });
 
 export default WebToonItem;
