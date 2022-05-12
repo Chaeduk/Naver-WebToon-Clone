@@ -38,7 +38,6 @@ const Ad = () => {
 
 const styles = StyleSheet.create({
   block: {
-    backgroundColor: 'green',
     width: '100%',
     height: '25%',
   },

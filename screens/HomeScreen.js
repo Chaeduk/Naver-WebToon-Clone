@@ -45,11 +45,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
   },
-  week: {
-    backgroundColor: 'white',
-    width: '100%',
-    height: 55,
-  },
 });
 
 export default HomeScreen;
