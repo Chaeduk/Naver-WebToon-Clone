@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 const WebToonItem = ({title, author, url, likeNum}) => {
   return (
     <View style={styles.block}>
-      <Image style={styles.image} source={url} />
+      <Image style={styles.image} source={{uri: url}} />
       <View style={styles.desc}>
         <Text style={styles.title}>{title}</Text>
         <View style={styles.reaction}>
@@ -22,7 +22,7 @@ const WebToonItem = ({title, author, url, likeNum}) => {
 WebToonItem.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  url: PropTypes.number.isRequired,
+  url: PropTypes.string.isRequired,
   likeNum: PropTypes.number.isRequired,
 };
 
